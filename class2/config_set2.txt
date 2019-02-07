@@ -1,0 +1,6 @@
+vlan 501
+  name BLUE
+vlan 503
+  name GREEN
+vlan 505
+  name YELLOW
