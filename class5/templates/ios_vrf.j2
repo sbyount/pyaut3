@@ -1,0 +1,12 @@
+
+vrf definition {{ vrf }}
+ rd {{ rd }}
+ !
+ {%- if addr_family == "ipv4" %}
+ address-family ipv4
+ {%- elif addr_family == "ipv6" %}
+ address-family ipv6
+ {%- endif %}
+  route-target export {{ rd }}
+  route-target import {{ rd }}
+ exit-address-family
