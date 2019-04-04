@@ -1,0 +1,6 @@
+interface loopback151
+  description blueberry
+!
+interface loopback152
+  description greenapple
+end
